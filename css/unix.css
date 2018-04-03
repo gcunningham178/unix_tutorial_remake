@@ -62,9 +62,7 @@ html, body{
 
 .navbar-default .nav > li > a:active{
     color: #FFFFFF;
-    border-bottom: solid;
-    border-color: white;
-    border-width: 4px;
+    background-color: #404040; 
 }
 
 .navbar-brand{
