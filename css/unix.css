@@ -57,7 +57,7 @@ html, body{
     transition: border ease 0.5s;*/
     color: black;
     background-color: white; 
-    transition: background ease 0.7s;
+    transition: background ease 1.2s;
 }
 
 .navbar-default .nav > li > a:active{
