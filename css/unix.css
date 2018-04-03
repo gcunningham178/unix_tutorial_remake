@@ -44,17 +44,20 @@ html, body{
 }
 
 .nav {
-    margin-top: 1.0em;
+    margin-top: 0.5em;
     font-size: 9pt;
     margin-left: 100px;
 }
 
 .navbar-default .nav > li > a:hover{
-    color: white;
+   /* color: white;
     border-top: solid;
     border-color: #FFFFFF;
     border-width: 1px;
-    transition: border ease 0.5s;
+    transition: border ease 0.5s;*/
+    color: black;
+    background-color: white; 
+    transition: background ease 0.7s;
 }
 
 .navbar-default .nav > li > a:active{
