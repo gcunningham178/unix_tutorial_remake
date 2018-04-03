@@ -1,0 +1,147 @@
+html, body{
+    font-family: sans-serif;
+    margin:0;
+    padding:0;
+    min-height:100%;
+    letter-spacing: 2px;
+    background-image: url("../images/unix_bckgrd.png");
+    background-size: cover;
+}
+/*
+ * Styles for navigation and footer
+ **/
+.navbar, .footer{
+    width: 100%;
+    background-color: black;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+    border-bottom: none;
+}
+
+.navbar{
+    position: relative;
+    font-family: sans-serif;
+    border-radius: 0;
+    padding-bottom: 0.1em;
+    margin-bottom: 0 !important;
+}
+
+.footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 10pt;
+}
+
+.navbar-header .navbar-brand, .navbar-default .nav > li > a{
+    color: white; 
+    text-transform: uppercase;
+}
+
+.nav {
+    margin-top: 1.5em;
+    font-size: 9pt;
+    margin-left: 100px;
+}
+
+.navbar-default .nav > li > a:hover{
+    /*font-weight: bold;*/
+    color: white;
+    border-top: solid;
+    border-color: #FFFFFF;
+    border-width: 1px;
+    transition: border ease 0.5s;
+}
+
+.navbar-default .nav > li > a:active{
+    color: #FFFFFF;
+    border-bottom: solid;
+    border-color: white;
+    border-width: 4px;
+}
+
+.navbar-brand{
+    font-size: 17pt;
+    margin-top: 0.7em;
+}
+
+.navbar-toggle{
+    background-color: white;
+    margin-top: 2.4em;
+    border: none;
+}
+/******************************************************************************************/
+
+/*
+ * Positioning and styling for container and content section
+ * Container ID wraps everything up and has min-height of 100% to take up whole page
+ * Padding is equal to or greater than footer height for content section to avoid overlapping
+ */
+
+#container{
+    min-height:100%;
+    position: absolute;
+    width: 100%;
+}
+
+#content{
+    padding-bottom: 70px;  
+}
+
+section{
+    text-align: justify;
+    color: #000000;
+    padding: 1em 100px 1em 100px;
+}
+
+.home-text{
+    text-align: center;
+    background-color: #404040;
+    color: white;
+}
+section:nth-child(even){
+    color: #000000;
+    background-color: #E8E8E8;
+}
+
+section:nth-child(odd){
+    background-color: #d9d9d9;
+}
+
+.demo{
+    list-style: none;
+}
+
+/*
+ * Styles font on page for headers, etc.
+ */
+.intro-head{
+    text-align: center;
+}
+
+/*
+ * Style icons and images
+ */
+
+.large-icon{
+    font-size: 7em;
+    margin-left: 70px;
+}
+
+#u-man{
+    height: 700px;
+    width: 500px;
+}
+
+/*
+ * Home Page Image
+ */
+ .jumbotron{
+    background: transparent;
+ }
+

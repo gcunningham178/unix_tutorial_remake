@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Working with Files</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
+     <link rel="stylesheet" type="text/css" href="css/unix.css">
+</head>
+
+<body>
+
+<div id="container">
+        <!--Navigation bar-->
+                <nav class="navbar navbar-default w3-container">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#unixNav">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                      <img src="images/unixify.png" alt="unixify"/>
+                    </div>
+                    <div class="collapse navbar-collapse" id="unixNav">
+                      <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="work_files.html">Files</a></li>
+                        <li><a href="directory_commands.html">Directories</a></li>
+                        <li><a href="keeping_tabs.html">Keeping Tabs</a></li>
+                        <li><a href="quiz.html">Unix Quiz</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+                
+<!--Content section-->
+
+        <div id="content w3-container">
+                 <article>
+                    <section id="files-sec">
+                        <h1 class="intro-head">Working with Files <span class="glyphicon glyphicon-file"></span></h1><br/>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>As I mentioned on the previous page, Unix has multiple purposes and can execute various tasks. Evidently, this is what makes it such
+                                a reliable resource for Mac users everywhere. One useful feature is that it can perform different functions involving files. You can use
+                                Unix to copy, move, and delete files from your computer. Of course there are so many commands that you can use, but for the purpose of this website,
+                                I will only be discussing a handful of them. This page is an introduction to the type of Unix commands that are used to manipulate files. Such commands
+                                include <em>ls, lpr, chmod, cp</em> and many more. With these commands, you can change file permissions, lists content in your folders, zip files,
+                                and perform other unique tasks. In case you are not familiar with file permissions and access levels of files, don't worry. This will all be discussed
+                                in the pages of this section.</p><br/>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>You may want to look at other pages for further clarification, as they specifically elaborate what these commands do and how to
+                                use them at the right moment. Learning how to use these commands is vital to mastering Unix and all it has to offer. In this section, you will
+                                learn how to work with files using Unix commands. After taking a look at these commands and their functions, you will have a better idea
+                                of how they should be used. Ready to dive in?</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="chmod-sec">
+                        <h1>The chmod Command: Access Denied or Access Approved</h1><br/>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>If you're familiar with FTP software, you've probably had experience with changing file or directory permissions.
+                                Read, write, and execute are access levels that must be taken into consideration when working with files. In fact, there
+                                are numbers associated with the access levels. 4 corresponds to the <em>read</em> access level, 2 corresponds to <em>write</em>,
+                                and 1 corresponds to <em>execute</em>. The numbers all add up to 7, which indicates full access to a file or directory. There are
+                                three categories that you must determine the access levels for. These categories are comprised of the user, group, and everyone else.
+                                Now let's take a look at the syntax for the chmod commands:</p>
+                                
+                                <ul class="demo">
+                                    <li><em>chmod filename mode</em></li>
+                                </ul>
+                                
+                                <p>To better understand the syntax, let's take a look at an applied example:</p>
+                                
+                                <ul class="demo">
+                                    <li><em>chmod index.html 644</em></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>I'll explain the reason for the numbers in the mode. Let's examine the first digit of 644. The first digit signifies the access level of
+                                the first category, the user. As I mentioned before, 4 coincides with read, 2 coincides with write, and 1 coincides with execute. If you add 4 and 2 together,
+                                the outcome is obviously 6. This indicates that the user has access levels of read and write. Now let's look at the second digit, the next category. This category represents
+                                the group. Notice that the group category has 4 as a digit. This shows that the group category has an access level of <em>read</em>. The last category, everyone else,
+                                has the same access level because it too has a digit of 4. Basically, the chmod command sets the permissions for both files and directories alike.</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="cp-sec">
+                        <h1>The cp Command: Copycat!</h1><br/>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>Ever wanted a file in more than one directory? Well, the cp command will most definitely get the job done for you.
+                                This command enables you to copy files. You might be wondering if the cp command is useful. May I kindly state that it can be
+                                useful, especially if you accidentally delete a file. With this command, you can have a copy of the same file saved somewhere else or even
+                                in the same directory. There are two of many ways in which you can use the cp command. One way is its default function, which is copying files
+                                from one location to the next. Another way is using the * wildcard followed by an extension to copy all files with the same extension to a
+                                designated directory.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Here are examples of how to use this command in both ways:</p>
+                                <ul class="demo">
+                                    <li><em>cp filename newDirectory</em></li>
+                                    <li><em>cp *fileExtension newDirectory</em></li>
+                                </ul>
+                        
+                                <p>Now apply these commands in a real scenario like the one shown below</p>
+                                <ul class="demo">
+                                    <li><em>cp my.txt my_folder</em></li>
+                                    <li><em>cp *.txt my_folder</em></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="diff-sec">
+                        <h1>The diff Command: Comparing and Contrasting, Mostly Comparing</h1><br/>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>It may not seem like an important task, but comparing files can be advantageous to you. Often times, you may desire to
+                                see where your files may differ. One command that can help you do that is the diff command. To put simply, this command allows you
+                                to compare files and view their differences. Specifically, it displays both files and the lines that are distinct to their respective files.
+                                In other words, you will only be able to see the differences rather than the similarities. This can also be done with directories, especially since
+                                they carry multiple items and content inside. While this command works interchangeably with directories, we will focus on how it can affect files
+                                for the sake of this section of the website.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>The syntax for the diff command can be found below:</p>
+                                <ul class="demo">
+                                    <li><em>diff filename1 filename2</em></li>
+                                </ul>
+                                
+                                <p>Here's an applied example:</p>
+                                <ul class="demo">
+                                    <li><em>diff my.txt this.txt</em></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="gzip-sec">
+                        <h1>The gzip Command: Compressing a File</h1><br/>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>On the computer, you've probably zipped files before. You can simply do this in multiple steps by holding the shift button, right-clicking
+                                the desired file or folder, going to the option 'Send To', and selecting the sub-option 'Compressed(zip folder)'. This sounds like it can be
+                                a hassle, but there is an easier way to zip files using Unix. This action involves a command known as gzip. You can guess by a part of the name that
+                                this command deals with compressing files, or zipping it. It is convenient to compress files due to the fact that the end result produces a smaller
+                                size file. Logically speaking, the smaller the size of the file, the less space it takes up on your computer. As a result, this command can be
+                                very beneficial in the long run because you'll have more space to work with after using it on multiple files.
+                                More importantly, gzip is said to give the highest compression rate and gives its files the ending <em>.gz</em>. Here is the proper syntax for
+                                the gzip command: <em>gzip filename</em>.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4>Commands Relating to gzip</h4>
+                        
+                                <p>There are a few commands that relate to the gzip command. One of them is known as <em>gunzip</em>. This is basically the opposite of the gzip
+                                command in the sense that it uncompresses any files that were compressed by gzip. Another command is known as <em>gzcat</em>, which allows you to
+                                view zipped files without unzipping or uncompressing them. By using this command with the lpr command, you can even print out the file. Below is the
+                                proper syntax for each scenario and command that was discussed:</p>
+                                
+                                <ul class="demo">
+                                    <li><em>gunzip filename</em></li>
+                                    <li><em>gzcat filename</em></li>
+                                    <li><em>gzcat filename | lpr</em></li>
+                                </ul>
+                            </div>
+                        </div>    
+                    </section>
+                    
+                    <section id="lpr-sec">
+                        <h2>The lpr Command: Printing Your Files</h2><br/>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>One great feature about Unix that even I did not know about until now is the fact that you can print your files
+                                straight from the terminal. The command that we will discuss to accomplish this is <em>lpr</em>. With this command,
+                                you can print anything you desire. There's also options that you may want to specify when attempting to print a file
+                                from your terminal. For instance, you can print double-sided documents in Unix. In order to do this, you must input
+                                <em>lpr -Pvalkyr-</em>. Also, you must use the -P option to specify the printer that you want to use if you are not going
+                                to use your default printer. Other commands, such as lpq and lprm, deviate from the main function of lpr, but are still
+                                separate commands nevertheless.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>The lpq command allows you to check out the printer queue. With this information, you can get the number necessary to halt the
+                                printing process or view the number of files being printed before yours.</p>
+                                
+                                <p>The lprm command allows you to delete a file from the printer queue. While using this command, you must use the job number from
+                                the printer queue to remove that file. You may also have to specify the name of the printer if it is not your default printer that
+                                you are using.</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="ls-sec">
+                        <h1>The ls Command: Give Me Information Now!</h1><br/>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>The ls command is a very useful tool in the sense that it tells you what files you have in your working directory.
+                                In other words, it gives you a <em>list</em> of the items. One advice I would give you to remember the ls command is to think
+                                about the word <em>list</em> and remember that the letters <em>ls</em> are found in that word. This sounds a bit cheesy, but it works.
+                                Also, you can use this command to confirm that you have a certain file in your directory. As the saying goes, better safe than sorry.</p>
+                                
+                                <p>There are other commands that branch off the ls command, such as ls-l and ls-a. The ls-l command lists out all the files in long
+                                format. This command gives other useful information as well, such as the last time the files were modified and the exact size
+                                of them. The ls-a command is essential if you want to list the hidden files, which are usually the ones that start with a dot in
+                                their name. </p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>By using the ls command, you will be able to organize yourself and keep track of all files in your directories. After all, things can
+                                get out of hand if you lose track of everything. Let's say you misplaced a file somewhere on your computer but don't know where
+                                to locate it. The ls command can list all files and content of the current working directory, which enables you to view everything that
+                                you have. This can help you locate a file, but it may take awhile because you have to insert this command for every directory until you find
+                                the lost file. My advice to you is to use the command <em>ff</em> to locate a missing file. It will save you ample time to do other important
+                                things and make your life easier. Just remember the file name in order to find it. Other than that, the ls command will list everything for you.</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="mv-sec">
+                        <h1>The mv Command: Location, Location, Location...</h1><br/>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>It's obvious that you may want to move certain files around on your computer on certain occasions. Let's say
+                                you had a file saved in the wrong directory and wanted to move it in your intended one. This command serves its function
+                                in this type of scenario. As the name suggests, the mv command moves the file around but does one of two things: transfer
+                                it to another directory or give it a different name. In other words, it can also be used as a renaming tool. When you think of
+                                the mv command, think of the word <em>move</em>. This may help in case you forget the command.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Below is the proper syntax for the command to utilize its effectiveness:</p>
+                                <ul class="demo">
+                                    <li><em>mv filename1 filename2</em></li>
+                                    <li><em>mv filename /destination/directory</em></li>
+                                </ul>
+                                
+                                <ul class="demo">
+                                    <li><em>mv my.txt this.txt</em></li>
+                                    <li><em>mv this.txt /Desktop/my_folder</em></li>
+                                    <li>ls</li>
+                                </ul>
+                                
+                                <p>Filename1 is referred to as the file's original name. Filename2 is the name you desire to change your file to. If you want to retain the same name and
+                                just move the file, set filename1 and filename2 identical to each other. The bottom command is used to move the file to a different location. Use the command
+                                ls to confirm that you have the file in the right place.</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="rm-sec">
+                        <h1>The rm Command: Removing Files</h1><br/>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>You will most definitely find yourself in a situation where you amy have to delete some files on your computer. This scenario
+                                can occur if you either have files that are no longer important or if you need to make room for files that are more important. Nevertheless,
+                                it is a significant decision to make, especially with the command <em>rm</em>. This command not only deletes the file, but it also permanently
+                                discards it from your computer. It's not like deleting a file and sending it to the trash can where you can recycle the file if you change
+                                your mind. <span id="important">This is a permanent move</span>.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Therefore, you must use this command with caution. You do not want to accidentally
+                                erase a file from your computer that you may need in the future. This shows the fact that there is a positive and negative side to this command.
+                                However, there is one advice that I will give you: use <strong>rm-i</strong>. This command will require confirmation from you before performing any
+                                action. This can actually save you from permanently deleting any essential files. Aside from that warning, now let's look at the syntax and applied
+                                example:</p>
+                                <ul class="demo">
+                                    <li><em>rm filename</em></li>
+                                    <li><em>rm my.txt</em></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                 </article> 
+        </div>
+
+<!--Footer section-->
+     <footer class="w3-container footer">
+        <p>&copy; UNIXify 2018. All Rights Reserved.</p>
+    </footer>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>            
+    <script type="text/javascript" src="js/unixscript.js"></script>
+</body>
+</html>

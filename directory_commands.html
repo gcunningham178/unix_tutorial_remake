@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Commands Involving Directories</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
+     <link rel="stylesheet" type="text/css" href="css/unix.css">
+</head>
+
+<body>
+
+<div id="container">
+        <!--Navigation bar-->
+                <nav class="navbar navbar-default w3-container">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#unixNav">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                      <img src="images/unixify.png" alt="unixify"/>
+                    </div>
+                    <div class="collapse navbar-collapse" id="unixNav">
+                      <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="work_files.html">Files</a></li>
+                        <li><a href="directory_commands.html">Directories</a></li>
+                        <li><a href="keeping_tabs.html">Keeping Tabs</a></li>
+                        <li><a href="quiz.html">Unix Quiz</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+                
+<!--Content section-->
+
+        <div id="content">
+            <div class="row">
+                 <article>
+                    <section id="dir-sec">
+                        <h1 class="intro-head">Commands Involving Directories <span class="glyphicon glyphicon-folder-open"></span></h1><br/>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>Hopefully, you have grasped somewhat of an understanding on how commands for files work. They will facilitate working with files and
+                                help you in the long run if you know the proper way to use them. However, you will not only be working with files on your computer. Often
+                                times, you will have to organize them in folders. This is where directories come in. In this section of the web site, you will learn how to
+                                work with directories using various commands. It's better to get used to them now because they will make directories your best friend.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>As I mentioned previously, there are commands that involve working with directories. While some commands used for files
+                                can work for directories interchangeably, a few commands are exclusive only for directories. After all, they are a crucial
+                                part of storage of files within a computer system. Computer users work with directories all the time, whether it involves
+                                saving a file in a folder, creating a folder on a desktop, or deleting files. As society evolves and computer technology
+                                continues to advance, it will be important for you to understand how to work with directories, as well as files. For Mac
+                                users, Unix is the perfect tool to facilitate that need. Let's take a look at the commands used to work with directories.</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="cd-sec">
+                        <h1>The cd Command: Choosing a Different Path</h1><br/>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>The cd command can be one of the most reliable commands that you will ever use in Unix. It enables you to change directories
+                                whenever you desire. This definitely helps when you want to work and create files in a certain directory. Using the cd command
+                                is like taking a taxicab in the world of the terminal because of the fact that it takes you wherever you direct the command toward.
+                                For example, if you were currently working in a directory called my_folder and wanted to switch to my_other_folder, you would simply
+                                use this following syntax: <em>cd my_other_folder</em>. This will take you from my_folder to my_other_folder as a result. You can use the
+                                command <em>pwd</em> and <em>ls</em> to verify where you are.</p><br/>
+                                
+                                <h4>Using the cd Command With Absolute and Relative Path Names</h4><br/>
+                    
+                                <p>Furthermore, it is imperative that you know the concepts of relative and absolute paths in order to effectively use the cd command.
+                                This conveys the fact that you cannot always simply input the command followed by the directory name. That will only work in certain
+                                cases, but not all of them. Due to this fact, we will discuss relative and absolute paths, as they are related to using <em>cd</em>.</p>
+                                
+                            </div>
+                            <div class="col-sm-6">
+                                <p>When logging into Unix, you begin in your home directory, which you can think of as your default setting. If you want to change directories,
+                                you can do this in one of two ways: using an absolute or relative path name. An absolute path starts from the root directory to the chosen
+                                directory. The path name of an absolute path always begins with a slash (/). The slash character signifies the root directory and is used when
+                                naming an absolute path. Here's an example of the use of the cd command followed by an absolute path name: </p>
+                                <ul class="demo">
+                                    <li>cd /user/Desktop/my_folder/my_subfolder</li>
+                                </ul>
+                                <p>A relative path begins with your current directory and ends with your chosen directory. In other words, relative paths <em>relate</em> to
+                                your current directory. For instance, suppose you wanted to change directories from my_folder to my_subfolder. You would use this syntax to properly
+                                switch directories: <em>cd my_folder/my_subfolder</em>. This implies that you are starting from the directory you are currently in and ending in
+                                your chosen folder. But what if you wanted to go to my_folder from my_subfolder? This is where it gets a little tricky. You use two dots followed
+                                by a slash to move up one folder (../). This is how it looks in the command input: <em>cd ../my_folder</em>. To move up two folders, you use two
+                                sequences of a pair of dots followed by a slash (../../).</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="pwd-sec">
+                        <h1>The pwd Command: Tell Me Where I Am</h1><br/>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>As I mentioned on the <em>ls</em> page, the ls command tells you what files you have in your working directory, giving you a <em>list</em>
+                                of the items. This command will also help you confirm that you have a certain file in your directory. You might be wondering why I'm
+                                mentioning the ls command on this page. This is because I'm introducing you to its equivalent command, but this command involves working
+                                with directories. The <em>pwd</em> command actually outputs the directory that you are currently working in. In fact, <em>pwd</em> stands
+                                for <em>print working directory</em>. This command can especially help when you forget what directory you're in or when you need to confirm
+                                that you changed to the right directory. The syntax for this command is really simple: just type the command <em>pwd</em> and it should
+                                work correctly.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5>Commands to Use When Lost</h5>
+                                <p>Like I said before, pwd helps when you forget where you are. This is beneficial due to the fact that it can prevent you from creating or
+                                saving a file in the wrong place. My advice to you is to use this command often because it can actually be your guide. If you use this along with
+                                the ls command, you'll know where you are and what contents you're working with. Even if you use pwd and discover that you're in the wrong
+                                directory, you can always travel to the right one using the cd command discussed above.</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="mkdir-sec">
+                        <h1>The mkdir Command: The Making of Directories</h1><br/>
+                         <div class="row">
+                            <div class="col-sm-6">
+                                <p>Directories are very important in the computer world because they are used to store and organize multiple
+                                files. Thy are like computer versions of storage rooms, which contains all sorts of things, such as word documents,
+                                HTML documents, pictures, and many more. Therefore, it is vital that Unix has a command that creates them.
+                                With the mkdir command, you can make as many directories as you want. Think of the mkdir command as an abbreviation of two
+                                words put together, which includes <em>make directory</em>. This may help you remember the name of the command for future references in case
+                                you forget. Now that you know there is a command that makes directories, it's time to put what you learned into practice. Look below at the syntax
+                                and applied example of the mkdir command:</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="demo">
+                                    <li><em>mkdir directoryName</em></li>
+                                    <li><em>mkdir myFolder</em></li>
+                                </ul>
+                                
+                                <p>By using the mkdir command, you will have the ability to organize files however you see fit. One scenario includes building a website. Suppose
+                                you want to create a web site but need to store all of your images, HTML documents, and CSS files. You can create a main folder that will hold
+                                all of your files for organizational purposes. Moreover, you can create sub-folders inside of your main folder in order to further group your
+                                files. For instance, you can create a sub-folder that will hold your images and another sub-folder that will store your CSS stylesheet. This
+                                can all be done using mkdir</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="rmdir-sec">
+                         <h1>The rmdir Command: Removing Directories</h1><br/>
+                          <div class="row">
+                            <div class="col-sm-6">
+                                <p>If you read the mkdir command page, you have already discovered that there is a way to make directories straight from the terminal. Thus,
+                                this command serves to be useful because it helps you to create directories when you need to organize files. But what if you have a directory
+                                that you do not need or that you accidentally created? This is where the rmdir command may accomodate. The <em>rmdir</em> command deletes the
+                                directory that you specify. One easy way to help you remember this command is that <em>rmdir</em> can be viewed as an abbreviation of the phrase
+                                <em>remove directory</em>. Again, this may sound a bit cheesy, but it helps to know commands like these, especially when you're trying to
+                                organize everything on your computer.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>There are two very significant commands that you must keep in mind when working with directories. If you viewed the <em>Working With Files</em>
+                                section and looked at all the commands there, you most likely already saw the mkdir command, which makes directories when called upon. Using this and the
+                                rmdir command will most definitely help you organize your content on your computer. Just remember to use mkdir to make directories and use rmdir to remove
+                                directories from your computer if you have no use for them anymore. Removing any unnecessary content will not only help you retain organization, but it will also
+                                give you more space to store any recent files or directories that you may find useful.</p>
+                            </div>
+                          </div>
+                    </section>
+                 </article> 
+            </div>
+        </div>
+
+<!--Footer section-->
+     <footer class="w3-container footer">
+        <p>&copy; UNIXify 2018. All Rights Reserved.</p>
+    </footer>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>            
+    <script type="text/javascript" src="js/unixscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Keeping Tabs</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
+     <link rel="stylesheet" type="text/css" href="css/unix.css">
+</head>
+
+<body>
+
+<div id="container">
+        <!--Navigation bar-->
+                <nav class="navbar navbar-default w3-container">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#unixNav">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                      <img src="images/unixify.png" alt="unixify"/>
+                    </div>
+                    <div class="collapse navbar-collapse" id="unixNav">
+                      <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="work_files.html">Files</a></li>
+                        <li><a href="directory_commands.html">Directories</a></li>
+                        <li><a href="keeping_tabs.html">Keeping Tabs</a></li>
+                        <li><a href="quiz.html">Unix Quiz</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+                
+<!--Content section-->
+
+        <div id="content">
+            <div class="row">
+                 <article>
+                    <section id="tabs-sec">
+                        <h1 class="intro-head">Commands That <em>Keep Tabs</em>: Expanding Your Horizon <span class="glyphicon glyphicon-eye-open"></span></h1><br/>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>So far, we have taken a look at how Unix can be used to organize files, print them, create directories, and perform other useful
+                                functions. Commands, such as pwd, cd, ls, and many others, will help you a great deal if you use them correctly. Now that we viewed
+                                some ways to personally improve your usage of Unix, how about expanding your horizon? Did you know that you can converse with someone
+                                via Unix? Did you know that you can check your email? Even more interesting, did you know that you can even retrieve information
+                                about other users? The answer to all three questions is yes!</p><br/>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>With one command, you can view all your e-mail messages as if you were logged onto your Yahoo account. With another command, you
+                                will be able to have a typed conversation with another user right at your terminal. You will even be able to view information about the user,
+                                such as phone numbers and addresses in a certain file. This page will show you the commands that will allow you to do all of the above.</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="elm-sec">
+                        <h1>The elm Command: E-mailing, Unix Style</h1><br/>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>There are multiple e-mail services on the Internet as we know it. You may be familiar with Yahoo, one of the most popular social networks on
+                                the Web today. Students at universities, such as those attending Rochester Institute of Technology, interact with other students and faculty
+                                via email. In other words, e-mailing has played a major role in society and has contributed to the increase in communication around the world
+                                today. However, the Internet is not the only place where you can send e-mail to someone. This is where Unix comes into play. One command that
+                                will allow you to send and view e-mails from anyone around the world is called the <em>elm</em> command.</p><br/>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>If you are typing in the elm command for the first time, you will be asked whether or not you want to make a <em>.elm</em> or Mail
+                                directory. Afterward, all of your messages will appear with the most recent one sent being first. What's more, the number of messages
+                                and a one-line summary of each message will be shown using the elm command. Moreover, there are various sub-commands that are associated with
+                                using the elm command. To navigate through the messages, use <em>k</em> to move up and <em>j</em> to move down. To respond to a current message,
+                                use <em>r</em>. To mail a message, use <em>m</em>. Indeed you will be prompted to enter the email address of whom you're sending the message to.
+                                Emacs will also start up for you to edit your message before sending it. Other sub-commands relating to elm can be found on this page
+                                <a href="http://doors.stanford.edu/~sr/computing/elm-old.html">doors.stanford.edu</a>. You can look here for more information.</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="finger-sec">
+                        <h1>The finger Command: What Are You Up To?</h1><br/>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>Like the w and who commands, the finger command can be used to get information about the user. However, there are subtle differences in both the
+                                amount and kind of information that the finger command gives. For instance, not only does it allow you to see who's logged in, but it also gives
+                                even more information.</p>
+                                <p>With the finger command, you can view the last time that the user read their email and other pieces of
+                                information that are stored in a single file called <em>.plan</em>. In this file, people store practical information, such as addresses and phone
+                                numbers. Using this command, you can also see this information displayed. You can also use the finger command on yourself, with which you can use
+                                to view your own information.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>The syntax and applied example for this command can be found below:</p>
+                                <ul class="demo">
+                                    <li><em>finger username</em></li>
+                                    <li><em>finger gto5873</em></li>
+                                </ul>
+                                <p>While this command may seem useful, it may not work for all sites. There are some sites from which you will not be able to retrieve any
+                                information at all. Also, the information that you receive with the command may vary from user to user. Nevertheless, the finger command
+                                will list any information about the user that is available for display.</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="talk-sec">
+                        <h1>The talk Command: Let's Talk About...Talking</h1><br/>
+                         <div class="row">
+                            <div class="col-sm-6">
+                                <p>One cool feature of Unix is the fact that you can communicate with someone in a typed conversation straight from your own
+                                terminal. Ever went on Facebook or any other social media and talked to a friend using instant messaging? This is pretty much the
+                                same scenario. With the talk command, you can converse with another user. The only thing you would have to do in order to accomplish
+                                this is specify the user name of whom you want to communicate with. The syntax for the talk command is as follows: <em>talk username</em>.
+                                The command is indeed straightforward and allows you to <em>talk</em> with whomever you please. As long as that person has a Mac computer,
+                                you will be able to converse with them via Unix.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <h6>The write Command: I Type, You Read</h6>
+
+                                <p>The write command is very similar to the talk command in the sense that it enables you to communicate with a chosen user. However, it is limited
+                                compared to its counterpart. This is due to the fact that you can only exchange one-line messages with a user. The idea is still the same, but it's like
+                                the "I talk, you listen and then talk" kind of approach to a conversation in the world of Unix.</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="who-sec">
+                         <h1>The who Command: Watching Every Move</h1><br/>
+                          <div class="row">
+                            <div class="col-sm-6">
+                                <p>The who command is very useful due to a few ways. One way is that you can find someone in a particular location, especially if they are in the
+                                same building that you are occupying. Another way is that it tells you who is logged on and where they came from. You can pretty much say that it is
+                                a form of keeping tabs. The syntax for the who command is rather simple: all you have to do is type in the command <em>who</em> when you are logged
+                                on Unix. There is no file name or directory name that you have to type in after the command because of the simple fact that you are only requesting
+                                information about the user.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <h6>The w Command: Still Keeping Tabs</h6>
+
+                                <p>The w command is very similar to the who command. It tells you who is logged on and where they came from. Even more intriguing is the fact that you
+                                can see whether or not that person is at the keyboard typing at the same time that you are checking his or her status. Like the who command, there is
+                                no need to type in a file name after the w command because you are not working with any files in this case.</p>
+                            </div>
+                          </div>
+                    </section>
+                 </article> 
+            </div>
+        </div>
+
+<!--Footer section-->
+     <footer class="w3-container footer">
+        <p>&copy; UNIXify 2018. All Rights Reserved.</p>
+    </footer>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>            
+    <script type="text/javascript" src="js/unixscript.js"></script>
+</body>
+</html>
