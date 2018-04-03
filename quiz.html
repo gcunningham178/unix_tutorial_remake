@@ -51,7 +51,7 @@
                 </div>-->
                 <div class="radio" ng-repeat="question in questions">
                     <h4>{{question.label}}</h4>
-                    <label ng-repeat="answer in question.answers"><input type="radio" name="{{question.name}}"/>{{answer}}</label>
+                    <label ng-repeat="answer in question.answers"><input type="radio" name="{{question.name}}"/>{{answer}}</label><br/>
                 </div>
                 <button class="btn btn-default" type="submit">Submit Answers</button>
             </form>
