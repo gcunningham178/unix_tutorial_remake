@@ -44,13 +44,12 @@ html, body{
 }
 
 .nav {
-    margin-top: 1.2em;
+    /*margin-top: 1.2em;*/
     font-size: 9pt;
     margin-left: 100px;
 }
 
 .navbar-default .nav > li > a:hover{
-    /*font-weight: bold;*/
     color: white;
     border-top: solid;
     border-color: #FFFFFF;
@@ -66,8 +65,8 @@ html, body{
 }
 
 .navbar-brand{
-    font-size: 17pt;
-    margin-top: 0.7em;
+    /*margin-top: 0.7em;*/
+    
 }
 
 .navbar-toggle{
