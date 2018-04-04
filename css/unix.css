@@ -145,3 +145,7 @@ section:nth-child(odd){
     background: transparent;
  }
 
+.centerText{
+    text-align: center;
+}
+
